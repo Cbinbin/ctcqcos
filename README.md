@@ -27,21 +27,26 @@
 
 ### qcos.uploadPath(filePath, single, bucket)
 ```js
-  filePath(string):  文件在本地的路径(必要)
+  filePath(string):  文件在本地的路径(必要),    
+  single:  同上(必要),    
+  bucket:  同上(可选),    
 ```
 
 ### qcos.uploadStream(streamParams, single, bucket)
 ```js
-  streamParams(object): {    
+  streamParams(object): {  (必要)    
     fileStream(string): 文件的buffer,    
     fileType(string): 文件的类型(.后缀名),    
-  } (必要)    
+  },     
+  single:  同上(必要),    
+  bucket:  同上(可选),    
 ```
 
 ## 删除上传的文件
 ### qcos.deleteKey(url, bucket)
 ```js
-  url(string):  上传成功后返回的url(必要)
+  url(string):  上传成功后返回的url(必要),
+  bucket:  同上(可选),    
 ```
 
 ## 获取存储空间列表
@@ -50,11 +55,11 @@
 ## 请求操作权限(xml)
 ### qcos.authGet(authParams)
 ```js
-  authParams(object): {    
+  authParams(object): {  (必要)    
     Method(string): http方法(get, post, delete, head),    
     Key(string): 文件名(包括文件夹路径),    
     Bucket(string): 和new ctcqcos()的Bucket 不一样时用到,    
-  }(必要)
+  }   
 ```
 
 ## 验证Bucket
