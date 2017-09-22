@@ -1,7 +1,7 @@
-const qcos = require('../index')
+const Qcos = require('../index')
   , expect = require('chai').expect
   , should = require('chai').should()
-  , qcloudcos = new qcos({
+  , qcloudcos = new Qcos({
     AppId: '***',
     SecretId: '***',
     SecretKey: '***',

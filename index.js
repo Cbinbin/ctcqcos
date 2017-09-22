@@ -1,3 +1,3 @@
-const qcos = require('./lib/qcos')
+const Qcos = require('./lib/Qcos')
 
-module.exports = qcos
+module.exports = Qcos
